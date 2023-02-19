@@ -1,0 +1,473 @@
+ /* ===== Google Font Import - Poppins ===== */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+ /* bootstrap-icons  */
+ @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+ * {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif !important;
+   scroll-behavior: smooth;
+ }
+
+ body {
+   background-color: #f1bb34 !important;
+ }
+
+
+ header {
+   height: 480px;
+   /* border: 1px solid black; */
+ }
+
+ #logo {
+   height: 100px;
+   width: 100px;
+   filter: drop-shadow(3px 3px 3px #222);
+ }
+
+/* NarBar */
+.navbar {
+  display: block !important;
+  position: sticky !important;
+  top: 7px;
+  width: 100% !important;
+  height: 110px;
+  font-size: larger;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out !important;
+  z-index: 9999;
+}
+
+.navbar-scrolled {
+  background-color: #f1bb34 !important;
+  box-shadow: 3px 3px 3px #b4923c;
+}
+
+@media only screen and (min-width:500px) and (max-width:1212px) {
+  .navbar-collapse {
+    background-color: #f1bb34;
+  }
+
+  .nav-item {
+    border: 1px solid rgb(117, 117, 117);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    text-align: center;
+  }
+}
+
+/* End of NarBar */
+
+ /* Login Form  */
+ .wrapper {
+   position: relative;
+   left: 110px;
+   width: 380px;
+   background: #fff;
+   border-radius: 15px;
+   box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+   height: 320px;
+ }
+
+ .wrapper .title {
+   font-size: 30px;
+   font-weight: 600;
+   text-align: center;
+   line-height: 80px;
+   color: #fff;
+   user-select: none;
+   border-radius: 15px 15px 0 0;
+   background: linear-gradient(-135deg, #e0a100, #ff0000);
+ }
+
+ .wrapper form {
+   padding: 10px 30px 50px 30px;
+ }
+
+ .wrapper form .field {
+   height: 40px;
+   width: 100%;
+   margin-top: 10px;
+   position: relative;
+ }
+
+ .wrapper form .field input {
+   height: 100%;
+   width: 100%;
+   outline: none;
+   font-size: 17px;
+   padding-left: 20px;
+   border: 1px solid lightgray;
+   border-radius: 25px;
+   transition: all 0.3s ease;
+   transform: translate(0, 0);
+ }
+
+ .wrapper form .field input:focus,
+ form .field input:valid {
+   border-color: #ff5e78;
+ }
+
+ .wrapper form .field label {
+   position: absolute;
+   top: 50%;
+   left: 20px;
+   color: #999;
+   font-weight: 400;
+   font-size: 17px;
+   pointer-events: none;
+   transform: translateY(-50%);
+   transition: all 0.3s ease;
+ }
+
+ form .field input:focus~label,
+ form .field input:valid~label {
+   top: 0%;
+   font-size: 16px;
+   color: #ff5e78;
+   background: #fff;
+   transform: translateY(-50%);
+ }
+
+ form .content {
+   display: flex;
+   width: 100%;
+   height: 40px;
+   font-size: 16px;
+   align-items: center;
+   justify-content: space-between;
+ }
+
+ form .content .checkbox {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+ form .content input {
+   width: 15px;
+   height: 10px;
+   transform: translate(0, 0);
+ }
+
+ form .content label {
+   color: #262626;
+   user-select: none;
+   padding-left: 5px;
+ }
+
+ form .content .pass-link a {
+   color: red;
+ }
+
+ form .field input[type="submit"] {
+   color: #fff;
+   border: none;
+   padding-left: 0;
+   margin-top: -20px;
+   font-size: 20px;
+   font-weight: 500;
+   cursor: pointer;
+   background: linear-gradient(-135deg, #e0a100, #ff0000);
+   transition: all 0.3s ease;
+ }
+
+ form .field input[type="submit"]:active {
+   transform: scale(0.95);
+ }
+
+ form .signup-link {
+   color: #262626;
+   text-align: center;
+ }
+
+ form .pass-link a,
+ form .signup-link a {
+   color: red;
+   text-decoration: none;
+ }
+
+ form .pass-link a:hover,
+ form .signup-link a:hover {
+   text-decoration: underline;
+ }
+
+ /* End of Login Form  */
+
+ 
+
+
+
+ /* Hungery Animation  */
+ .hungry {
+   display: block !important;
+   width: 246px;
+   overflow: hidden;
+ }
+
+ .hungry .text {
+   position: relative;
+   color: #ff0000;
+   font-size: 30px;
+   font-weight: 600;
+ }
+
+ .hungry .text.first-text {
+   color: #FFF;
+ }
+
+ .text.sec-text:before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background-color: #f1bb34;
+   border-left: 2px solid #f44040;
+   animation: animate 4s steps(12) infinite;
+ }
+
+ @keyframes animate {
+
+   40%,
+   60% {
+     left: calc(100% + 4px);
+   }
+
+   100% {
+     left: 0%;
+   }
+ }
+
+ p.order {
+   color: #ff0000;
+   font-size: 30px;
+   font-weight: 600;
+   text-decoration: none;
+ }
+
+ p.order:hover {
+   text-decoration: underline;
+   cursor: pointer;
+ }
+
+ /* End of Hungery Animation  */
+
+
+
+
+
+
+ /* Search Bar  */
+ .search-container-center {
+   display: table-cell;
+   text-align: center;
+   vertical-align: middle
+ }
+
+ .search-text {
+   position: relative;
+   left: 45%;
+   color: #c70404;
+   font-size: 30px;
+   font-weight: 600;
+   text-decoration: none;
+ }
+
+ .search {
+   display: inline-block;
+   position: relative;
+   left: 45%;
+   height: 35px;
+   width: 35px;
+   box-sizing: border-box;
+   margin: 0px 8px 7px 0px;
+   padding: 7px 9px 0px 9px;
+   border: 3px solid white;
+   border-radius: 25px;
+   transition: all 200ms ease;
+   cursor: text;
+   color: #ffffff;
+ }
+
+ .search:after {
+   content: "";
+   position: absolute;
+   width: 3px;
+   height: 20px;
+   right: -5px;
+   top: 21px;
+   background: white;
+   border-radius: 3px;
+   transform: rotate(-45deg);
+   transition: all 200ms ease;
+ }
+
+ .search.active,
+ .search:hover {
+   width: 200px;
+   margin-right: 0px;
+ }
+
+ .search.active:after,
+ .search:hover:after {
+   height: 0px;
+ }
+
+ .search #search-input {
+   width: 100%;
+   border: none;
+   box-sizing: border-box;
+   font-family: Helvetica;
+   font-size: 15px;
+   color: inherit;
+   background: transparent;
+   outline-width: 0px;
+ }
+
+ /* End of Search Bar  */
+
+
+
+ /* Meal section  */
+ #meals-cards {
+   display: flex;
+   flex-wrap: wrap;
+   margin-top: 20px;
+   width: 100vw;
+ }
+
+ /* Card Styles */
+ .card-sl {
+   border-radius: 8px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+ }
+
+ .card-image img {
+   max-height: 100%;
+   max-width: 100%;
+   border-radius: 8px 8px 0px 0;
+ }
+
+ /* heart animation */
+ .card-action {
+   position: relative;
+   float: right;
+   margin-top: -25px;
+   margin-right: 20px;
+   z-index: 2;
+   color: #E26D5C;
+   background: #fff;
+   border-radius: 100%;
+   padding: 15px;
+   font-size: 15px;
+   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
+   border: none;
+ }
+
+ .card-action:hover {
+   color: #fff;
+   background: #E26D5C;
+   animation: pulse 1.5s infinite;
+ }
+
+ /* End of heart animation */
+
+ .card-heading {
+   font-size: 18px;
+   font-weight: bold;
+   background: #fff;
+   padding: 10px 15px;
+ }
+
+ .card-text {
+   padding: 10px 15px;
+   background: #fff;
+   font-size: 14px;
+   color: #636262;
+ }
+
+ .card-button {
+   display: flex;
+   justify-content: center;
+   padding: 10px 0;
+   width: 100%;
+   background: linear-gradient(-135deg, #e0a100, #ff0000);
+   color: #fff;
+   border-radius: 0 0 8px 8px;
+   text-decoration: none;
+   border: none;
+ }
+
+ .card-button:hover {
+   text-decoration: none;
+   background: linear-gradient(135deg, #e0a100, #ff0000);
+   color: #fff;
+ }
+
+
+ @keyframes pulse {
+   0% {
+     -moz-transform: scale(0.9);
+     -ms-transform: scale(0.9);
+     -webkit-transform: scale(0.9);
+     transform: scale(0.9);
+   }
+
+   70% {
+     -moz-transform: scale(1);
+     -ms-transform: scale(1);
+     -webkit-transform: scale(1);
+     transform: scale(1);
+     box-shadow: 0 0 0 50px rgba(90, 153, 212, 0);
+   }
+
+   100% {
+     -moz-transform: scale(0.9);
+     -ms-transform: scale(0.9);
+     -webkit-transform: scale(0.9);
+     transform: scale(0.9);
+     box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
+   }
+ }
+
+ /* End of meal Section  */
+
+
+ /* Modal  */
+ #mealModal {
+   z-index: 9999999999;
+   min-width: 840px;
+ }
+
+ #mealModal img {
+   width: 100%;
+ }
+
+
+ /* Close animation */
+ .close-btn {
+   position: relative;
+   float: right;
+   margin-top: -302px;
+   margin-right: -23px;
+   z-index: 2;
+   color: #fff;
+   background: #E26D5C;
+   border-radius: 100%;
+   padding: 15px;
+   font-size: 15px;
+   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
+   border: none;
+ }
+
+ .close-btn:hover {
+   animation: pulse 1.5s infinite;
+ }
+
+ /* end of Close animation */
