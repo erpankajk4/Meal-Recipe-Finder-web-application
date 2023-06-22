@@ -4,7 +4,7 @@
 It is a web application that allows users to search and view meal recipes. This application also allows users to create an account(demo), add meals to their favorites, and view their favorites list.
 
 # Usage
-To use the application, simply click on this git respository link - https://erpankajk4.github.io/Meal-Recipe-Finder-web-application/
+To use the application, simply click on this git Host link - https://erpankajk4.github.io/Meal-Recipe-Finder-web-application/
 
 The landing page of the application features a navigation bar, a login form, and a search bar.
 
