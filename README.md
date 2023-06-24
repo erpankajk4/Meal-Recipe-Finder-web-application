@@ -1,5 +1,5 @@
 ## Meal Recipe Finder
-[https://github.com/erpankajk4/Meal-Recipe-Finder-web-application/blob/main/demo.gif](https://github.com/erpankajk4/Meal-Recipe-Finder-web-application/blob/81218606b753e5015fe369b746a6f9269be0419d/demo.gif)
+![demo](https://github.com/erpankajk4/Meal-Recipe-Finder-web-application/blob/81218606b753e5015fe369b746a6f9269be0419d/demo.gif)
 
 # Description:
 This is a website that allows users to search for meal recipes, view details of the meals, and save their favorite recipes. The website provides an interactive and user-friendly interface for users to explore a variety of meal options.
