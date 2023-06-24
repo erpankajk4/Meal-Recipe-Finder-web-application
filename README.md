@@ -1,6 +1,4 @@
 ## Meal Recipe Finder
-![](./demo.gif)
-
 # Description:
 This is a website that allows users to search for meal recipes, view details of the meals, and save their favorite recipes. The website provides an interactive and user-friendly interface for users to explore a variety of meal options.
 
